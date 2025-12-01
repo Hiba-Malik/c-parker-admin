@@ -6,7 +6,6 @@ import { createWeb3Modal } from '@web3modal/wagmi/react';
 import { config } from '@/config/wagmi';
 import { Toaster } from 'react-hot-toast';
 import { useState } from 'react';
-import { polygonAmoy } from 'wagmi/chains';
 
 const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || '';
 
@@ -14,7 +13,6 @@ const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || '';
 createWeb3Modal({
   wagmiConfig: config,
   projectId,
-  chains: [polygonAmoy],
   themeMode: 'dark',
   themeVariables: {
     '--w3m-accent': '#4B158E',
