@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #4B158E;
+  --background: #141429;
+}
+
+body {
+  background-color: var(--background);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.gradient-button {
+  background: linear-gradient(90deg, #150F3E 0%, #200F46 50%, #3A126F 100%);
+  border: 1px solid;
+  border-image-source: linear-gradient(90deg, #324AB9 0%, #4B158E 100%);
+  border-image-slice: 1;
+}
+
+.gradient-border {
+  border: 1px solid;
+  border-image-source: linear-gradient(90deg, #324AB9 0%, #4B158E 100%);
+  border-image-slice: 1;
+}
+
+.connect-wallet-button {
+  background: linear-gradient(90deg, #150F3E 0%, #200F46 50%, #3A126F 100%);
+}
+
+
+
